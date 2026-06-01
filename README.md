@@ -1,7 +1,6 @@
 # ClipPilot
 
 A lightweight, cross-platform clipboard monitor that automatically **summarizes anything you copy** using OpenAI chat models.  
-Perfect for devs, writers, and researchers who want to stay focused while working with long-form content.
 
 ## Quickstart
 
