@@ -1,13 +1,17 @@
-# ClipPilot
+# Clipboard AI Summary
 
-A lightweight, cross-platform clipboard monitor that automatically **summarizes anything you copy** using OpenAI chat models.  
+A lightweight Python utility that monitors clipboard content and automatically generates concise summaries using the OpenAI API.
+
+Built as a small scripting project to practice API integration that addresses a real-world problem.
+
+---
 
 ## Quickstart
 
 ```bash
 # Clone
 git clone <repo url>
-cd clippilot
+cd clipboard-ai-summary
 
 # Install
 pip install -r requirements.txt
@@ -21,72 +25,16 @@ python main.py
 
 ![Demo](demo.gif)
 
+---
+
 ## Features
 
-- **Real-time monitoring**: auto detects new clipboard content
-- **AI-powered summaries**: concise 2-3 bullet takeaways from copied text
-- **Resilient**: handles rate limits, timeouts, and network issues
-- **Cross-platform**: Works on Windows, macOS, and Linux
-- **Minimal**: single script, few dependencies, quick setup
+- Monitors clipboard content in real time
+- Generates concise summaries of copied text
+- Works on Windows, MacOS, Linux
 
-
-
-### Example Output
-
-```
-Clipboard Monitor Started...
-Press Ctrl+C to stop monitoring
-========================================
-New clipboard content detected:
-Length: 1250 characters
-Content: [Your copied text here]
-========================================
-AI Summary:
---------------------
-• Key point 1 about the content
-• Key point 2 about the content
-• Key point 3 about the content
-========================================
-```
-
-## Dependencies
-
-- **pyperclip**: clipboard access
-- **openai**: OpenAI API client
-- **python-dotenv**: environment variable management
-
-## Configuration
-
-### Environment Variables
-
-| Variable         | Description         | Required |
-| ---------------- | ------------------- | -------- |
-| `OPENAI_API_KEY` | Your OpenAI API key | Yes      |
-
-
-## Troubleshooting
-
-### Common Issues
-
-**"OPENAI_API_KEY not found"**
-
-- Ensure your `.env` file exists and contains the API key
-- Check that the key is valid and has sufficient credits
-
-**"Rate limit exceeded"**
-
-- Wait a moment before copying new content
-- Consider upgrading your OpenAI plan if needed
-
-**"Request timed out"**
-
-- Check your internet connection
-- Try again in a few moments
-
-## Contributing
-
-Contributions welcome! Open an issue or PR.
+---
 
 ## License
 
-MIT - feel free to use, modify, and share.
+MIT
